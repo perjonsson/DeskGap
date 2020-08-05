@@ -110,9 +110,9 @@ stages:
         win2016:
           imageName: 'vs2017-win2016'
           deskGapPlatform: 'win32-ia32'
-        win2012r2:
-          imageName: 'vs2015-win2012r2'
-          deskGapPlatform: 'win32-ia32'
+        # win2012r2:
+        #   imageName: 'vs2015-win2012r2'
+        #   deskGapPlatform: 'win32-ia32'
         mac:
           imageName: 'macos-10.14'
           deskGapPlatform: 'darwin-x64'
