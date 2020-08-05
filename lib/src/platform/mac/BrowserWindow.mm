@@ -83,7 +83,9 @@ namespace DeskGap {
         [window setBackgroundColor: [NSColor whiteColor]];
 
         if (@available(macOS 10.12, *)) {
-            [window setTabbingMode: NSWindowTabbingModeDisallowed];
+            [window setTabbingMode: NSWindowTabbingModePreferred];
+            [window allowsAutomaticWindowTabbing: YES]
+            // window.addTabbedWindow(_:ordered:)
         }
 
         DeskGapBrowserWindowDelegate* windowDelegate = [[DeskGapBrowserWindowDelegate alloc]
