@@ -84,7 +84,7 @@ namespace DeskGap {
 
         if (@available(macOS 10.12, *)) {
             [window setTabbingMode: NSWindowTabbingModePreferred];
-            [window allowsAutomaticWindowTabbing: YES]
+            // [window allowsAutomaticWindowTabbing: YES]
             // window.addTabbedWindow(_:ordered:)
         }
 
